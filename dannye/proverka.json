@@ -1,0 +1,96 @@
+{
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 1024,
+      "height": 900
+    },
+    {
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 320,
+      "height": 740
+    }
+  ],
+  "timeout": 30000,
+  "request_queue": 128,
+  "host": "127.0.0.1",
+  "required_fonts": [
+    "Literata",
+    "Onest",
+    "Oranienbaum"
+  ],
+  "browser": "chrome",
+  "filters": {
+    "all": 16,
+    "1": 5,
+    "2": 9,
+    "3": 2
+  },
+  "mobile_width": 700,
+  "test_name": "Алексей",
+  "test_needs": "Пожелания, которые должны сохраниться при смене объекта",
+  "invalid_phone": "123",
+  "test_phone": "+7 900 123-45-67",
+  "temporary_prefix": ".proverka_",
+  "success": "Променад: проверки пяти размеров экрана пройдены.",
+  "sections": 13,
+  "collage": {
+    "photos": 9,
+    "selector": "#vysota .chapter-photo",
+    "pointer_ratio": 0.8
+  },
+  "history_fixture": [
+    {
+      "year": 2020,
+      "photos": []
+    },
+    {
+      "year": 2021,
+      "photos": [
+        {
+          "image": "planirovki/prevyu/plan_12112.webp",
+          "alt": "Тестовый чертёж",
+          "caption": "Тестовый материал для проверки галереи, не фотография строительства.",
+          "date": "2021-06-01"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "photos": [
+        {
+          "image": "izobrazheniya/gazeta/dvor.webp",
+          "alt": "Тестовая иллюстрация двора",
+          "caption": "Тестовый материал для проверки галереи, не фотография строительства.",
+          "date": "2022-06-01"
+        },
+        {
+          "image": "izobrazheniya/gazeta/parking.webp",
+          "alt": "Тестовая иллюстрация паркинга",
+          "caption": "Тестовый материал для проверки галереи, не фотография строительства.",
+          "date": "2022-10-01"
+        }
+      ]
+    }
+  ],
+  "history_swipe": {
+    "touchstart": [
+      160,
+      80
+    ],
+    "touchend": [
+      40,
+      84
+    ]
+  }
+}

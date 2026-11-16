@@ -1,0 +1,25 @@
+.hero-wordmark{color:var(--brand-gold)}
+.hero-portal{--portal-arch:50% 50% 3px 3px / 36% 36% 3px 3px}
+.hero-photo{clip-path:none;border-radius:var(--portal-arch);overflow:hidden;background:var(--wine)}
+.hero-photo img{object-position:65% center;filter:none;transform:scale(1.03)}
+.hero-photo::after{content:'';position:absolute;inset:0;border:1px solid var(--brass);border-radius:inherit;pointer-events:none}
+@media(max-width:700px){.hero-portal{--portal-arch:50% 50% 2px 2px / 30% 30% 2px 2px}.hero-photo img{object-position:65% center}}
+
+@media(min-width:701px){
+.hero{--hero-type-size:min(clamp(150px,18vw,290px),30svh);--hero-heading-gap:32px;--hero-house-scale:1}
+.hero-canvas{height:max(520px,calc(100svh - var(--header-height) - var(--hero-top) + var(--hero-fold-offset)))}
+.hero-wordmark{font-size:var(--hero-type-size)}
+.hero .word-house{font-size:calc(1em*var(--hero-house-scale))}
+.hero-portal{top:24px;bottom:74px}
+.hero .hero-copy{top:calc(24px + var(--hero-type-size)*.8 + var(--hero-heading-gap));bottom:calc(var(--hero-type-size)*var(--hero-house-scale)*var(--hero-house-center-ratio));width:36%;display:flex;flex-direction:column;justify-content:space-between;gap:var(--hero-action-gap)}
+.hero .hero-copy .button{translate:0 50%}
+}
+@media(min-width:701px) and (max-width:950px){:root{--header-height:104px}.hero{--hero-type-size:min(21vw,30svh);--hero-house-scale:.88}.hero .hero-copy{width:43%}.hero-portal{left:48%;top:42px;bottom:90px}}
+.hero-intro{font:400 clamp(34px,3.3vw,54px)/1.24 var(--display);color:var(--paper);margin:0;width:max-content;max-width:none;white-space:nowrap}
+.hero .hero-copy .button{width:100%;min-height:96px;padding:22px 26px;gap:16px;margin-top:0;font-size:clamp(20px,1.65vw,28px);line-height:1.25;justify-content:space-between;flex:none}
+.hero .hero-copy .button .icon{width:34px;height:34px;flex:none}
+@media(min-width:701px) and (max-height:800px){.hero{--hero-type-size:min(clamp(150px,18vw,290px),26svh);--hero-heading-gap:24px}.hero-intro{font-size:clamp(32px,3.3vw,46px)}.hero .hero-copy .button{min-height:80px;padding:18px 22px}}
+@media(max-width:950px){.hero-intro{font-size:34px}.hero .hero-copy .button{font-size:20px;padding-inline:20px}.hero .hero-copy .button .icon{width:28px;height:28px}}
+@media(max-width:700px){.hero .hero-copy{width:100%;display:flex;flex-direction:column;gap:24px}.hero-intro{font-size:clamp(24px,7.2vw,32px)}.hero .hero-copy .button{min-height:84px;font-size:20px;padding:20px}}
+
+

@@ -1,0 +1,19 @@
+.hero-side{display:none}.hero .hero-copy{width:31%}.hero-portal{left:43%;right:0}.hero-wordmark{font-size:clamp(150px,18vw,290px)}
+.facts-list h3{font-size:34px}.section-heading{gap:45px}.section-heading>p{max-width:370px}
+.plan-view{box-shadow:none;border-color:var(--line)}
+.contact-windows{position:relative;max-width:430px;height:300px}.contact-window::after{border-width:7px}
+.footer-top{border:0;padding-top:0}.footer-brand{font-size:15.5vw}
+@media(min-width:1800px){.footer-brand{font-size:280px}}
+@media(max-width:1200px){.hero-wordmark{font-size:19vw}.hero .hero-copy{width:32%}.hero-portal{left:42%}.contact-heading h2{font-size:60px}}
+@media(max-width:950px){
+.header{gap:15px}.header nav{gap:18px;font-size:14px}.brand-name{font-size:18px}.brand-mark{width:30px}.header-contact{padding:12px;gap:8px;font-size:13px}
+.hero-wordmark{font-size:21vw}.hero .hero-copy{width:34%}.hero-description{font-size:19px}.hero .button{font-size:14px;padding:14px 10px;gap:9px}.hero-address{font-size:14px}.hero-portal{left:43%;top:65px;bottom:115px}
+.facts-list h3{font-size:29px}.contact-heading h2{font-size:65px}.contact-windows{height:240px;max-width:350px}.footer-brand{font-size:14.8vw}
+}
+@media(max-width:700px){
+.header nav{font-size:18px;left:26px;right:26px}.brand-name{font-size:20px}.brand-mark{width:32px}.header-contact{display:none}
+.hero-wordmark{font-size:26vw;height:444px}.hero-portal{top:36px;bottom:auto;height:368px}.hero .hero-copy{width:100%}.hero-description{font-size:21px}.hero .button{font-size:16px}.hero-address{font-size:16px}.hero-price{margin-top:28px}.hero-price strong{font-size:29px}
+.section-heading h2{font-size:51px}.filters button{padding:11px 15px}.plan-actions .button{padding-inline:12px;font-size:16px}.plan-actions .button-icon{width:24px}.price{font-size:29px}
+.contact-heading h2{font-size:51px}.contact-windows{height:205px;max-width:290px;margin-top:35px;gap:12px}.contact-form .button{padding-inline:16px;gap:12px}.footer-brand{font-size:15vw}.footer-top{gap:15px;font-size:14px}.footer small{font-size:14px}
+}
+@media(max-width:360px){.hero-wordmark{height:396px;font-size:26vw}.hero-portal{height:330px;top:32px}.hero-description{font-size:20px}.hero-price strong{font-size:27px}.section-heading h2,.contact-heading h2{font-size:45px}.plan-actions .button{padding-inline:10px;gap:8px}.contact-form .button{padding-inline:13px}}

@@ -1,0 +1,14 @@
+import { nastroitMenu } from './nastroit_menu.js';
+import { nastroitPodbor } from './nastroit_podbor.js';
+import { nastroitDvizhenie } from './nastroit_dvizhenie.js';
+import { nastroitVybor } from './nastroit_vybor.js';
+import { nastroitOblozhku } from './nastroit_oblozhku.js';
+import { nastroitPerehody } from './nastroit_perehody.js';
+import { nastroitFotoistoriyu } from './fotoistoriya/nastroit_fotoistoriyu.js';
+nastroitVybor();
+nastroitMenu();
+nastroitPodbor();
+nastroitDvizhenie();
+nastroitOblozhku();
+nastroitPerehody();
+nastroitFotoistoriyu();

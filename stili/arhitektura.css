@@ -1,0 +1,26 @@
+.hero-structure{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden;color:var(--wine)}
+.hero-structure i{position:absolute;display:block;background:currentColor;opacity:.38}
+.hero-structure i:first-child{width:12px;top:0;bottom:0;left:32%}
+.hero-structure i:last-child{height:12px;top:256px;left:0;right:0}
+.hero-portal{filter:drop-shadow(var(--arch-shadow))}
+.hero-photo{position:absolute;inset:0;clip-path:var(--gable);overflow:hidden;background:var(--wine)}
+.hero-photo img{object-position:65% center;filter:saturate(.75) contrast(1.04);transform:scale(1.03)}
+.gable-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.gable-outline{stroke:var(--night);stroke-width:var(--beam);stroke-linejoin:miter}
+.gable-detail{stroke:var(--brass);stroke-width:1.2;fill:none}
+.height-image{border-radius:50%;background:var(--wine);box-shadow:var(--window-shadow)}
+.height-art{position:absolute;inset:var(--window-ring);border-radius:50%;overflow:hidden}
+.height-art img{object-position:84% center;filter:saturate(.7);transform:scale(calc(1.06 - var(--scene-progress)*.06))}
+.round-tracery{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;stroke:var(--wine);stroke-width:10;pointer-events:none}
+.round-rim{stroke:var(--brass);stroke-width:1}.round-center{fill:var(--wine);stroke:none}
+.panorama-shell{border-radius:48% 48% 0 0 / 22% 22% 0 0}
+.panorama-bars i{height:100%;width:var(--beam);background:var(--night);transform:translateX(calc((var(--scene-progress) - .5)*42px));box-shadow:6px 10px 18px rgb(15 9 10 / 25%)}
+.panorama-bars span{position:absolute;left:0;right:0;top:21%;height:var(--beam);background:var(--night)}
+.contact-windows{display:flex;gap:16px;align-items:end;height:270px;margin-top:48px;max-width:420px;pointer-events:none}
+.contact-window{position:relative;flex:1;height:82%;clip-path:var(--gable);background:var(--wine);overflow:hidden}
+.contact-window:nth-child(2){height:100%}
+.contact-window img{filter:saturate(.5) brightness(.78);object-position:18% center;transform:scale(calc(1.1 - var(--scene-progress)*.08))}
+.contact-window:nth-child(2) img{object-position:58% center}.contact-window:nth-child(3) img{object-position:90% center}
+.contact-window::after{content:'';position:absolute;inset:0;border:8px solid var(--wine);pointer-events:none}
+.contact-window::before{content:'';position:absolute;left:0;right:0;top:54%;height:7px;background:var(--wine);z-index:1}
+@media(prefers-reduced-motion:reduce){.hero-portal{translate:none}.hero-photo img,.height-art img,.contact-window img,.panorama-photo,.panorama-bars i,.panorama-word,.hero-wordmark span{transform:none}}

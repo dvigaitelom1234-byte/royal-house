@@ -1,0 +1,6 @@
+{
+  "document": "index.html",
+  "patterns": ["stili/*.css", "skripty/**/*.js", "dannye/fotoistoriya.json"],
+  "import_map_id": "versii-resursov",
+  "version_key": "v"
+}

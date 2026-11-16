@@ -1,0 +1,5 @@
+:root{--timber-color:#4b342a;--brace-ratio:3}
+:root{--timber-face:44px;--gutter:clamp(100px, 7.4vw, 150px);--frame-padding:120px}
+@media(max-width:950px){:root{--timber-face:32px;--gutter:64px;--frame-padding:96px}}
+@media(max-width:700px){:root{--timber-face:20px;--gutter:38px;--frame-padding:76px}}
+@media(max-width:360px){:root{--timber-face:20px;--gutter:34px;--frame-padding:76px}}

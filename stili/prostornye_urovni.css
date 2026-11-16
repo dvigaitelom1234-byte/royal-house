@@ -1,0 +1,10 @@
+.duplex-section{padding-block:clamp(144px,11vw,184px);grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);column-gap:clamp(72px,6vw,112px);row-gap:56px}
+.duplex-section h2{font-size:clamp(58px,5.1vw,82px);line-height:1.08}
+.duplex-copy>p{max-width:500px;margin-top:44px;line-height:1.7}
+.duplex-visual{--level-space:84px}
+.duplex-details>p{max-width:460px;font-size:22px;line-height:1.6;margin-bottom:44px}
+.duplex-details .button{min-height:76px;padding:22px 24px}
+@media(max-width:1200px){.duplex-section{column-gap:64px;row-gap:48px;padding-block:136px}.duplex-section h2{font-size:5.1vw}.duplex-copy>p{margin-top:36px}.duplex-visual{--level-space:72px}.duplex-details>p{font-size:21px}}
+@media(max-width:950px){.duplex-section{grid-template-columns:minmax(0,1fr);padding-block:120px;row-gap:56px}.duplex-copy{gap:48px}.duplex-section h2{font-size:56px}.duplex-copy>p{margin:0}.duplex-visual{--level-space:82px}.duplex-details{gap:48px}.duplex-details>p{max-width:48%;margin:0}.duplex-details .button{max-width:48%}}
+@media(max-width:700px){.duplex-section{padding-block:104px;row-gap:44px}.duplex-section h2{font-size:clamp(46px,12.5vw,65px)}.duplex-copy>p{margin-top:32px;font-size:18px}.duplex-visual{--level-space:36px}.duplex-details>p{max-width:100%;font-size:21px;margin-bottom:36px}.duplex-details .button{max-width:100%;padding:20px 16px;min-height:72px}}
+@media(max-width:360px){.duplex-section h2{font-size:41px}.duplex-visual{--level-space:30px}.duplex-details>p{font-size:19px}}

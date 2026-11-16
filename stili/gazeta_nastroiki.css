@@ -1,0 +1,11 @@
+:root{
+ --gazeta-title:clamp(56px,4.6vw,82px);--gazeta-pair-title:clamp(44px,3.8vw,68px);
+ --gazeta-copy:clamp(21px,1.45vw,24px);--gazeta-small:19px;--gazeta-note:17px;
+ --gazeta-title-leading:1.08;--gazeta-copy-leading:1.55;--gazeta-space:clamp(76px,6vw,112px);
+ --gazeta-gap:clamp(28px,2.5vw,40px);--gazeta-tilt:-.7deg;--gazeta-back-tilt:2.4deg;
+ --gazeta-shadow:3px 8px 9px rgb(43 27 25 / 18%);
+ --gazeta-photo-delay:90ms;--gazeta-scrap-delay:170ms;--gazeta-back-duration:420ms;
+ --gazeta-sheet:url('../izobrazheniya/gazeta/podlozhka.webp');--gazeta-columns:url('../izobrazheniya/gazeta/polosy.webp');
+ --gazeta-letter:url('../izobrazheniya/gazeta/pisma.webp');--gazeta-clipping:url('../izobrazheniya/gazeta/obryvki.webp');
+ --gazeta-pointer-duration:150ms;--paper-pointer-x:0px;--paper-pointer-y:0px;--paper-pointer-turn:0deg;
+}

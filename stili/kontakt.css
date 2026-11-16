@@ -1,0 +1,17 @@
+.contact{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(120px,10vw,180px)}
+.contact-column{min-width:0;display:flex;flex-direction:column;gap:48px}
+.contact-map{width:100%;height:clamp(260px,24vw,340px);overflow:hidden;border:1px solid var(--dark-line);border-radius:3px;background:var(--night)}
+.contact-map iframe{display:block;width:100%;height:100%;border:0;filter:grayscale(1) sepia(.65) saturate(.55) brightness(.96)}
+.contact-divider{position:absolute;top:0;bottom:0;left:calc(50% - var(--timber-face)/2);width:var(--timber-face);background:var(--timber-color);pointer-events:none}
+.contact-heading h2{font-size:clamp(55px,5.3vw,82px)}
+.church-illustration{display:block;color:var(--brass);width:100%;max-width:470px;height:auto;margin-top:40px;margin-inline:auto;transform:scaleX(var(--church-width-scale));transform-origin:center bottom}
+@media(min-width:951px){.contact-heading{display:flex;flex-direction:column}.contact-heading p{margin-bottom:40px}.church-illustration{margin-top:auto;flex-shrink:0}}
+.selected{display:block;margin-bottom:32px;padding:0;border:0}
+.selected>label{display:block;color:var(--text-on-dark);font-size:16px;margin-bottom:12px}
+.plan-select{position:relative}.plan-select select{appearance:none;width:100%;min-height:64px;padding:17px 50px 17px 18px;border:1px solid var(--form-line);border-radius:2px;background:transparent;color:var(--paper);font:18px/1.5 var(--body);cursor:pointer}
+.plan-select select:hover{border-color:var(--brass)}.plan-select select:focus-visible{outline:2px solid var(--brass);outline-offset:5px}.plan-select option{background:var(--night);color:var(--paper)}
+.plan-select>svg{position:absolute;right:18px;top:50%;transform:translateY(-50%);width:22px;height:22px;color:var(--brass);pointer-events:none}
+@media(max-width:1200px){.contact-heading h2{font-size:58px}}
+@media(max-width:950px){.contact{grid-template-columns:minmax(0,1fr)}.contact-divider{position:relative;inset:auto;width:calc(100% + var(--gutter)*2);height:var(--timber-face);margin-inline:calc(var(--gutter)*-1)}.contact-heading h2{font-size:65px}.church-illustration{max-width:430px;margin-top:32px}.contact-form{margin:0;max-width:none}}
+@media(max-width:700px){.contact-heading h2{font-size:51px}.church-illustration{margin-top:30px}.plan-select select{font-size:16px;padding-left:14px}.contact{row-gap:36px}}
+@media(max-width:360px){.contact-heading h2{font-size:45px}}

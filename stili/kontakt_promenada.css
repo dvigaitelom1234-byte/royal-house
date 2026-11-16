@@ -1,0 +1,9 @@
+.variant-promenad .contact{--contact-content-gap:clamp(24px,2.2vw,36px);--contact-map-min:clamp(260px,22vw,340px);--contact-map-tint:color-mix(in srgb,var(--brass) 20%,transparent);height:auto;min-height:0}
+.variant-promenad .contact-heading{display:flex;flex-direction:column;min-height:0}
+.variant-promenad .contact-heading p{max-width:none;margin-block:var(--contact-content-gap) 0}
+.variant-promenad .contact-heading .contact-map{flex:1 0 auto;height:auto;min-height:var(--contact-map-min);margin-top:var(--contact-content-gap);position:relative}
+.variant-promenad .contact-map iframe{position:absolute;inset:0}
+.variant-promenad .contact-map::after{content:'';position:absolute;inset:0;background:var(--contact-map-tint);pointer-events:none}
+.variant-promenad .contact-column{gap:0;align-self:start;min-height:0}
+.variant-promenad .contact-form{padding-top:0}
+@media(max-width:950px){.variant-promenad .contact-heading .contact-map{flex:none;height:var(--contact-map-min)}}

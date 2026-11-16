@@ -1,0 +1,4 @@
+html,body{background:var(--timber-color)}
+.footer-brand{padding:0}.footer{padding-block:88px}
+@media(max-width:950px){.footer{padding-block:76px}}
+@media(max-width:700px){.footer{padding-block:64px}}

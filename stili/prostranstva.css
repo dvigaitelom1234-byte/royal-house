@@ -1,0 +1,33 @@
+.house-facts{--facts-bottom:max(var(--section-gap),calc(var(--brace-span)/1.4142 + 32px));grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);column-gap:4%;row-gap:64px;align-items:center;padding-bottom:var(--facts-bottom)}
+.ceiling-copy h2{font-size:clamp(64px,7.2vw,108px);line-height:1.02}
+.ceiling-copy .facts-lead{max-width:430px;margin-top:30px;font-size:21px}
+.ceiling-visual{--measure-space:64px;position:relative;min-width:0;padding-left:var(--measure-space);isolation:isolate}
+.ceiling-visual>img,.duplex-visual>img{width:100%;height:auto;object-fit:contain;filter:drop-shadow(var(--window-shadow))}
+.ceiling-measure{position:absolute;left:12px;top:8%;bottom:7.8%;width:calc(var(--measure-space) - 12px + 1.8%);border-block:1px solid var(--wine);color:var(--wine)}
+.ceiling-measure::before{content:'';position:absolute;left:14px;top:0;bottom:0;width:1px;background:currentColor}
+.ceiling-measure span{position:absolute;left:14px;top:50%;transform:translate(-50%,-50%);padding:12px 0;background:var(--stone);font:32px/1 var(--display);white-space:nowrap}
+.house-facts .facts-list{margin-top:6px}
+.house-facts .facts-list::after{bottom:calc(var(--facts-bottom)*-1)}
+.duplex-section{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:32px 4%;padding:120px var(--gutter);color:var(--paper);overflow:clip}
+.duplex-copy{align-self:end;min-width:0}
+.duplex-section h2{font-size:clamp(58px,5.3vw,90px);line-height:1.04;text-wrap:initial}
+.duplex-copy>p{font-size:21px;line-height:1.6;margin-top:30px;max-width:425px;color:var(--text-on-dark)}
+.duplex-visual{position:relative;grid-column:2;grid-row:1/3;min-width:0;align-self:center;padding-right:0}
+.duplex-details{align-self:start;min-width:0}
+.duplex-details>p{font:24px/1.5 var(--editorial);max-width:390px;margin-bottom:32px}
+.duplex-details .button{font-size:16px;max-width:100%;gap:24px;padding-inline:20px}
+@media(max-width:1200px){
+.house-facts{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);column-gap:3%;padding-top:110px}
+.ceiling-copy h2{font-size:7.4vw}.ceiling-copy .facts-lead{font-size:19px}
+.ceiling-visual{--measure-space:48px}.ceiling-measure{left:8px;width:calc(var(--measure-space) - 8px + 1.8%)}.ceiling-measure::before,.ceiling-measure span{left:10px}.ceiling-measure span{font-size:28px}
+.duplex-section{grid-template-columns:minmax(0,.85fr) minmax(0,1.25fr);column-gap:4%;padding-block:100px}.duplex-section h2{font-size:5.1vw}.duplex-copy>p{font-size:19px}.duplex-details>p{font-size:21px}.duplex-details .button{gap:16px;padding-inline:16px}
+}
+@media(max-width:950px){
+.house-facts{grid-template-columns:minmax(0,1fr);gap:38px;padding-top:100px}.ceiling-copy{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}.ceiling-copy h2{font-size:68px}.ceiling-copy .facts-lead{margin:0;max-width:100%}.ceiling-visual{width:100%;max-width:730px;margin-inline:auto;--measure-space:60px}.ceiling-measure span{font-size:32px}.house-facts .facts-list{margin-top:22px}
+.duplex-section{grid-template-columns:minmax(0,1fr);gap:34px;padding-block:95px}.duplex-copy{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}.duplex-section h2{font-size:56px}.duplex-copy>p{margin:0;font-size:19px}.duplex-visual{grid-column:1;grid-row:auto}.duplex-details{display:flex;align-items:center;justify-content:space-between;gap:36px}.duplex-details>p{max-width:48%;margin:0;font-size:21px}.duplex-details .button{max-width:48%;font-size:16px}
+}
+@media(max-width:700px){
+.house-facts{padding-top:76px;gap:30px}.ceiling-copy{display:block}.ceiling-copy h2{font-size:clamp(48px,14.5vw,72px)}.ceiling-copy .facts-lead{font-size:19px;margin-top:24px}.ceiling-visual{--measure-space:38px}.ceiling-measure{left:6px;width:calc(var(--measure-space) - 6px + 1.8%)}.ceiling-measure::before,.ceiling-measure span{left:7px}.ceiling-measure span{font-size:23px;padding-block:8px}.house-facts .facts-list{margin-top:14px}
+.duplex-section{padding:76px var(--gutter);gap:28px}.duplex-copy{display:block}.duplex-section h2{font-size:clamp(46px,12.5vw,65px);line-height:1.05}.duplex-copy>p{font-size:18px;margin-top:24px}.duplex-details{display:block}.duplex-details>p{font-size:21px;max-width:100%;margin-bottom:26px}.duplex-details .button{max-width:100%;font-size:16px;gap:16px;padding:16px}
+}
+@media(max-width:360px){.ceiling-copy h2{font-size:48px}.ceiling-copy .facts-lead{font-size:18px}.ceiling-visual{--measure-space:32px}.ceiling-measure span{font-size:21px}.duplex-section h2{font-size:41px}.duplex-details>p{font-size:19px}}

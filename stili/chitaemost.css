@@ -1,0 +1,11 @@
+.header nav,.header-contact,.menu-button{font-size:var(--label-size)}
+.filters button,.plan-option span,.enlarge-plan>span,.plan-type,.plan-info ul{font-size:var(--label-size)}
+.plan-actions .button,.duplex-details .button,.contact-form .button{font-size:var(--label-size)}
+.selected>label,.contact-form>label:not(.consent),.form-status{font-size:var(--label-size)}
+.contact-form input:not([type=checkbox]),.contact-form textarea,.plan-select select{font-size:var(--field-size)}
+.facts-list p,.contact-heading p,.plan-info>p{font-size:var(--small-copy-size)}
+.consent{font-size:var(--note-size)}
+.consent{line-height:1.65}
+@media(min-width:701px) and (max-width:950px){.header nav,.header-contact{font-size:var(--note-size)}}
+@media(max-width:700px){.plan-select select{font-size:var(--label-size)}}
+@media(max-width:360px){.plan-select select{padding-right:34px}.plan-select>svg{right:10px;width:16px;height:16px}}

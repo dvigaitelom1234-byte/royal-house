@@ -1,0 +1,21 @@
+:root {
+ --stone:#e0d0b6; --sand:#eadcc3; --peach:#c5a36b; --clay:#a58a59; --paper:#f3e5c9;
+ --ink:#35251e; --plum:#482825; --wine:#582c30; --olive:#6e6c4d; --muted:#695443; --line:#b6a080;
+ --night:#2b1b19; --brass:#c4a36d; --brand-gold:#d9c499; --dark-line:#876b51;
+ --display:'Oranienbaum',Georgia,serif; --body:'Onest',sans-serif; --signature:'Oranienbaum',Georgia,serif; --editorial:'Literata',Georgia,serif;
+ --gutter:clamp(24px,5.5vw,106px); --section-gap:clamp(76px,9vw,150px); --ease:cubic-bezier(.16,1,.3,1);
+ --body-size:20px; --label-size:18px; --note-size:16px; --field-size:20px; --small-copy-size:20px; --duration:350ms;
+ --depth:12px 25px 45px rgb(28 15 10 / 32%); --scene-progress:.5;
+ --arch-shadow:14px 28px 36px rgb(24 13 8 / 34%); --window-shadow:10px 18px 30px rgb(43 27 20 / 24%);
+ --beam:16px; --window-ring:18px; --gable:polygon(50% 0,100% 43%,100% 100%,0 100%,0 43%);
+ --header-height:110px; --hero-top:84px; --hero-fold-offset:16px;
+ --hero-action-gap:clamp(28px,3vw,44px);
+ --hero-house-center-ratio:.432;
+ --hero-building-top:-12px; --hero-building-right:-8%; --hero-building-bottom:24px; --hero-building-left:45%;
+ --hero-building-fade-start:50%; --hero-building-fade-end:92%; --hero-building-travel:-64px; --hero-building-duration:800ms;
+ --hero-building-tablet-top:30%; --hero-building-tablet-left:18%;
+ --hero-building-mobile-top:72px; --hero-building-mobile-right:-6%; --hero-building-mobile-left:-6%; --hero-building-mobile-height:372px; --hero-building-mobile-travel:-24px;
+ --hero-building-small-top:64px; --hero-building-small-height:332px; --hero-word-shadow:0 4px 24px rgb(43 27 25 / 45%);
+ --church-width-scale:1.08;
+ --text-on-dark:#e4cdb0; --muted-on-dark:#cdb99b; --form-line:#a08363; --placeholder:#d4b797;
+}

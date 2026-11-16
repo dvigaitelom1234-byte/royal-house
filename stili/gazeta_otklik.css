@@ -1,0 +1,6 @@
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .variant-promenad .chapter .chapter-photo>img,.variant-promenad .chapter .chapter-photo::before,.variant-promenad .chapter .chapter-photo::after{transition:translate var(--gazeta-pointer-duration) ease-out,rotate var(--gazeta-pointer-duration) ease-out}
+ .variant-promenad .chapter .chapter-photo>img{translate:calc(var(--paper-pointer-x) * .35) calc(var(--paper-pointer-y) * .35);rotate:calc(var(--paper-pointer-turn) * .4)}
+ .variant-promenad .chapter .chapter-photo::before{translate:calc(var(--paper-pointer-x) * -1) calc(var(--paper-pointer-y) * -.8);rotate:var(--paper-pointer-turn)}
+ .variant-promenad .chapter .chapter-photo::after{translate:var(--paper-pointer-x) var(--paper-pointer-y);rotate:calc(var(--paper-pointer-turn) * -1.5)}
+}

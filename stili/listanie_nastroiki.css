@@ -1,0 +1,9 @@
+:root {
+  --listanie-gap:12px; --listanie-control:48px; --listanie-radius:2px;
+  --plan-page-size:4;
+  --plan-thumb-width:56px; --plan-thumb-height:64px; --plan-card-pad:14px;
+  --plan-card-title:clamp(25px,2.2vw,32px); --plan-card-label:16px;
+  --listanie-outline-offset:-3px;
+}
+@media(max-width:1200px) { :root { --plan-page-size:2; } }
+@media(max-width:700px) { :root { --plan-page-size:1; --plan-thumb-width:56px; --plan-thumb-height:64px; --plan-card-pad:14px; --plan-card-title:30px; --plan-card-label:16px; } }

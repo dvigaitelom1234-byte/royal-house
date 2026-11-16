@@ -1,0 +1,28 @@
+.variant-promenad [data-paper=razvorot]{
+ --gazeta-newsprint:var(--gazeta-sheet);--gazeta-scrap:var(--gazeta-columns);--gazeta-photo-ink:saturate(.82) contrast(.98);
+ --gazeta-tilt:-.65deg;--gazeta-back-tilt:2.6deg;--gazeta-back-inset:2% 1% -4% -1%;
+ --gazeta-scrap-inset:-3% -1% auto auto;--gazeta-scrap-width:26%;--gazeta-scrap-height:34%;--gazeta-scrap-tilt:7deg;
+ --gazeta-photo-motion:bumaga-prihlopyvanie;--gazeta-back-motion:bumaga-sdvig;--gazeta-photo-duration:530ms;
+}
+.variant-promenad [data-paper=kolonki]{
+ --gazeta-newsprint:var(--gazeta-columns);--gazeta-scrap:var(--gazeta-clipping);--gazeta-photo-ink:sepia(.08) saturate(.76) contrast(1.02);
+ --gazeta-tilt:.5deg;--gazeta-back-tilt:-1.8deg;--gazeta-back-inset:-1% -2% 3% 2%;
+ --gazeta-scrap-inset:12% auto auto -2%;--gazeta-scrap-width:17%;--gazeta-scrap-height:79%;--gazeta-scrap-tilt:-4deg;
+ --gazeta-photo-motion:bumaga-sdvig;--gazeta-back-motion:bumaga-spusk;--gazeta-photo-duration:480ms;--gazeta-photo-delay:140ms;
+}
+.variant-promenad [data-paper=arhiv]{
+ --gazeta-newsprint:var(--gazeta-letter);--gazeta-scrap:var(--gazeta-sheet);--gazeta-photo-ink:sepia(.12) saturate(.84) contrast(.95);
+ --gazeta-tilt:-.3deg;--gazeta-back-tilt:1.7deg;--gazeta-back-inset:-3% -1% 1% 1%;
+ --gazeta-scrap-inset:auto -1% -4% auto;--gazeta-scrap-width:43%;--gazeta-scrap-height:20%;--gazeta-scrap-tilt:-3deg;
+ --gazeta-photo-motion:bumaga-spusk;--gazeta-back-motion:bumaga-razvorot;--gazeta-photo-duration:610ms;--gazeta-scrap-delay:80ms;
+}
+.variant-promenad [data-paper=obryvok]{
+ --gazeta-newsprint:var(--gazeta-clipping);--gazeta-scrap:var(--gazeta-letter);--gazeta-photo-ink:sepia(.06) saturate(.68) contrast(1.04);
+ --gazeta-tilt:.7deg;--gazeta-back-tilt:-2.2deg;--gazeta-back-inset:1% 0 -4% 2%;
+ --gazeta-scrap-inset:-2% auto auto -2%;--gazeta-scrap-width:36%;--gazeta-scrap-height:33%;--gazeta-scrap-tilt:-7deg;
+ --gazeta-photo-motion:bumaga-razvorot;--gazeta-back-motion:bumaga-prihlopyvanie;--gazeta-photo-duration:570ms;--gazeta-photo-delay:70ms;
+}
+.variant-promenad #dvor{--gazeta-back-tilt:-1.5deg;--gazeta-scrap-inset:auto auto -2% 3%;--gazeta-scrap-tilt:5deg}
+.variant-promenad #raion{--gazeta-back-tilt:1.5deg;--gazeta-scrap-inset:auto 1% -3% auto;--gazeta-scrap-tilt:6deg}
+.variant-promenad #kommercia{--gazeta-scrap-inset:5% -2% auto auto;--gazeta-scrap-tilt:4deg}
+.variant-promenad #terrasy,.variant-promenad #lodzhii{--gazeta-tilt:0deg}

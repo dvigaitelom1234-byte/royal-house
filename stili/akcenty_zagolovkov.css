@@ -1,0 +1,3 @@
+.house-facts,.choice{--heading-accent:var(--wine)}
+.duplex-section,.contact{--heading-accent:var(--brass)}
+.heading-accent{color:var(--heading-accent)}

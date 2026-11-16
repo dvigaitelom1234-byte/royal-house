@@ -1,0 +1,12 @@
+:root {
+  --history-gap:20px; --history-radius:2px;
+  --history-section-space:88px; --history-heading-space:32px;
+  --history-image-height:600px; --history-image-ratio:16/9; --history-image-mobile:4/3;
+  --history-title:var(--gazeta-title); --history-year:clamp(24px,2.8vw,36px);
+  --history-year-pad:12px 22px; --history-empty-space:40px;
+  --history-dialog-width:1200px; --history-control-inset:24px;
+  --history-surface:var(--night); --history-frame-surface:transparent;
+  --history-accent:var(--brand-gold);
+}
+@media(max-width:950px) { :root { --history-section-space:72px; } }
+@media(max-width:700px) { :root { --history-gap:16px; --history-section-space:56px; --history-heading-space:20px; --history-year-pad:10px 16px; --history-empty-space:24px; --history-control-inset:8px; } }

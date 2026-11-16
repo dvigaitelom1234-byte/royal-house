@@ -1,0 +1,49 @@
+:root{
+ --chapter-space:clamp(136px,10vw,184px);--chapter-gap:clamp(80px,7vw,128px);
+ --chapter-title:clamp(56px,5.1vw,86px);--chapter-copy-gap:40px;--chapter-action-gap:40px;
+ --chapter-image-ratio:4/3;--chapter-editorial-size:22px;--chapter-text-leading:1.7;
+ --chapter-copy-inset:clamp(24px,2.4vw,48px);
+}
+.chapter{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.18fr);column-gap:var(--chapter-gap);row-gap:var(--chapter-action-gap);padding:var(--chapter-space) var(--gutter);align-items:center;overflow:clip}
+.chapter--stone{background:var(--stone);color:var(--ink);--heading-accent:var(--wine);--chapter-text:var(--muted);--chapter-line:var(--line)}
+.chapter--night{background:var(--night);color:var(--paper);--heading-accent:var(--brass);--chapter-text:var(--text-on-dark);--chapter-line:var(--dark-line)}
+.chapter .chapter-copy{display:block;grid-column:1;grid-row:1;min-width:0;align-self:end}
+.chapter h2{font-size:var(--chapter-title);line-height:1.08;text-wrap:balance}
+.chapter-text{margin-top:var(--chapter-copy-gap);color:var(--chapter-text);font:var(--body-size)/var(--chapter-text-leading) var(--body);max-width:48ch}
+.chapter-text p+p{margin-top:var(--chapter-copy-gap);font:var(--chapter-editorial-size)/1.6 var(--editorial);color:inherit}
+.chapter .chapter-photo{position:relative;grid-column:2;grid-row:1/3;min-width:0;width:100%;max-width:none;margin:0;padding:0;aspect-ratio:var(--chapter-image-ratio);align-self:center;overflow:visible;border:0;border-radius:0}
+.chapter .chapter-photo img{width:100%;height:100%;aspect-ratio:var(--chapter-image-ratio);object-fit:contain;filter:drop-shadow(var(--window-shadow))}
+.chapter .chapter-action{display:block;grid-column:1;grid-row:2;align-self:start;min-width:0}
+.chapter .chapter-action .button{max-width:100%;margin:0}
+.chapter--reverse{grid-template-columns:minmax(0,1.18fr) minmax(0,1fr)}
+.chapter--reverse .chapter-copy,.chapter--reverse .chapter-action{grid-column:2}
+.chapter--reverse .chapter-photo{grid-column:1}
+@media(min-width:951px){.chapter:not(.chapter--reverse) .chapter-copy,.chapter:not(.chapter--reverse) .chapter-action{padding-left:var(--chapter-copy-inset)}}
+.chapter .facts-lead{margin-top:var(--chapter-copy-gap);max-width:48ch;font:var(--chapter-editorial-size)/1.6 var(--editorial)}
+.chapter .facts-list{grid-column:1/-1;grid-row:3;display:grid;grid-template-columns:1fr 1fr;gap:var(--chapter-gap);padding-top:var(--chapter-copy-gap);margin-top:24px;border-top:1px solid var(--chapter-line)}
+.chapter .facts-list::after{display:none}
+.chapter .facts-list h3{font:34px/1.2 var(--display);margin-bottom:20px}
+.chapter .facts-list p{font:var(--body-size)/var(--chapter-text-leading) var(--body);color:var(--chapter-text)}
+.chapter-facts{grid-column:1/-1;grid-row:3;list-style:none;padding:var(--chapter-copy-gap) 0 0;margin:24px 0 0;border-top:1px solid var(--chapter-line);display:grid;grid-template-columns:1fr 1fr;gap:40px var(--chapter-gap)}
+.chapter-facts h3{font:32px/1.2 var(--display);margin-bottom:18px}
+.chapter-facts p{font-size:var(--label-size);line-height:var(--chapter-text-leading);color:var(--chapter-text)}
+.chapter .ceiling-measure{left:-32px;width:40px;top:8%;bottom:8%}
+.chapter .ceiling-measure::before,.chapter .ceiling-measure span{left:0}
+@media(max-width:1200px){:root{--chapter-gap:96px;--chapter-title:clamp(48px,5.1vw,62px)}}
+@media(max-width:950px){
+ :root{--chapter-space:120px;--chapter-title:64px}
+ .chapter,.chapter--reverse{grid-template-columns:minmax(0,1fr);row-gap:40px}
+ .chapter .chapter-copy{grid-column:1;grid-row:1;max-width:640px}
+ .chapter .chapter-photo{grid-column:1;grid-row:2;width:calc(100% - 64px);max-width:680px;margin-inline:auto}
+ .chapter .chapter-action{grid-column:1;grid-row:3}
+ .chapter .facts-list,.chapter-facts{grid-column:1;grid-row:4;gap:36px}
+ .chapter h2{max-width:16ch}.chapter-text{max-width:58ch}
+}
+@media(max-width:700px){
+ :root{--chapter-space:104px;--chapter-title:clamp(43px,12vw,62px);--chapter-copy-gap:32px;--chapter-action-gap:32px;--chapter-editorial-size:21px}
+ .chapter{row-gap:32px}.chapter-text{line-height:1.65}
+ .chapter .chapter-photo{width:calc(100% - 24px)}
+ .chapter .facts-list,.chapter-facts{grid-template-columns:1fr;gap:32px;margin-top:8px}
+ .chapter .facts-list h3,.chapter-facts h3{font-size:30px}
+ .chapter .ceiling-measure{left:-8px;width:16px}.chapter .ceiling-measure span{font-size:18px}
+}

@@ -1,0 +1,34 @@
+@keyframes bumaga-prihlopyvanie{
+ 0%{opacity:0;transform:translate(-24px,32px) rotate(-6deg) scale(1.035)}
+ 25%{opacity:1;transform:translate(7px,-7px) rotate(2deg)}
+ 55%{transform:translate(-3px,3px) rotate(-1deg)}
+ 80%{transform:translate(1px,-1px) rotate(.2deg)}
+ 100%{opacity:1;transform:rotate(var(--paper-rest-angle))}
+}
+@keyframes bumaga-sdvig{
+ 0%{opacity:0;transform:translateX(56px) rotate(2deg)}
+ 28%{opacity:1;transform:translateX(-12px) rotate(-1deg)}
+ 60%{transform:translateX(4px) rotate(.7deg)}
+ 84%{transform:translateX(-1px)}
+ 100%{opacity:1;transform:rotate(var(--paper-rest-angle))}
+}
+@keyframes bumaga-spusk{
+ 0%{opacity:0;transform:translate(3px,-40px) rotate(5deg) scale(.975)}
+ 30%{opacity:1;transform:translate(0,9px) rotate(-1.2deg) scale(1.015)}
+ 58%{transform:translate(0,-4px) rotate(.6deg)}
+ 83%{transform:translateY(1px)}
+ 100%{opacity:1;transform:rotate(var(--paper-rest-angle))}
+}
+@keyframes bumaga-razvorot{
+ 0%{opacity:0;transform:translate(-13px,8px) rotate(-11deg) scale(.96)}
+ 32%{opacity:1;transform:translate(5px,-2px) rotate(3.5deg) scale(1.01)}
+ 62%{transform:translate(-2px,1px) rotate(-1.4deg)}
+ 85%{transform:rotate(.4deg)}
+ 100%{opacity:1;transform:rotate(var(--paper-rest-angle))}
+}
+@media(prefers-reduced-motion:no-preference){
+ .variant-promenad .chapter-photo.collage-arrived>img{animation:var(--gazeta-photo-motion) var(--gazeta-photo-duration) steps(2,end) var(--gazeta-photo-delay) both}
+ .variant-promenad .chapter-photo.collage-arrived::before{animation:var(--gazeta-back-motion) var(--gazeta-back-duration) steps(2,end) both}
+ .variant-promenad .chapter-photo.collage-arrived::after{animation:var(--gazeta-photo-motion) var(--gazeta-back-duration) steps(3,end) var(--gazeta-scrap-delay) both}
+}
+@media(prefers-reduced-motion:reduce){.variant-promenad .chapter-photo>img,.variant-promenad .chapter-photo::before,.variant-promenad .chapter-photo::after{animation:none;translate:none;rotate:none;transition:none}}

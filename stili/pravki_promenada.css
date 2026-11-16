@@ -1,0 +1,36 @@
+.variant-promenad{--header-rh-size:54px;--header-nav-size:18px;--ceiling-space:clamp(56px,4.8vw,84px);--ceiling-copy-gap:30px;--ceiling-title:clamp(52px,4.5vw,80px);--measure-size:clamp(18px,1.6vw,24px)}
+.variant-promenad .header{gap:32px}.variant-promenad .brand-initials{font:var(--header-rh-size)/1 var(--display);letter-spacing:-.04em;color:var(--paper)}
+.variant-promenad .header nav{gap:clamp(20px,2.6vw,44px);font-size:var(--header-nav-size)}.variant-promenad .header-contact{font-size:var(--header-nav-size)}
+.variant-promenad #vysota{padding-block:var(--ceiling-space)}
+.variant-promenad #vysota .ceiling-copy{display:flex;flex-direction:column;align-items:stretch;gap:var(--ceiling-copy-gap);align-self:center;max-width:none}
+.variant-promenad #vysota h2{font-size:var(--ceiling-title);line-height:1.06}.variant-promenad #vysota h2 br{display:block}
+.variant-promenad #vysota .facts-lead{font-family:var(--body);font-weight:400;margin:0;max-width:28ch}
+.variant-promenad #vysota .chapter-action{padding:0;align-self:stretch}
+.variant-promenad .chapter .chapter-text p+p{font-family:var(--editorial);font-style:italic;font-weight:400}
+.variant-promenad #raion .chapter-action{padding-left:0}
+.variant-promenad .chapter .chapter-photo{filter:none}
+.variant-promenad .chapter .chapter-photo>img{filter:var(--gazeta-photo-ink) drop-shadow(var(--gazeta-shadow))}
+.variant-promenad #vysota .ceiling-measure{left:-22px;width:30px;top:8%;bottom:8%;filter:none;box-shadow:none}
+.variant-promenad #vysota .ceiling-measure span{font-size:var(--measure-size);padding:8px 4px;box-shadow:none;background:var(--stone)}
+.variant-promenad #terrasy,.variant-promenad #lodzhii{border-block:0}
+.variant-promenad #terrasy::before,.variant-promenad #lodzhii::before{border-block-width:var(--timber-face)}
+.variant-promenad #terrasy::after,.variant-promenad #lodzhii::after{display:block}
+.variant-promenad #terrasy h2,.variant-promenad #lodzhii h2,.variant-promenad #terrasy .chapter-text,.variant-promenad #lodzhii .chapter-text{width:100%;text-align:center;margin-inline:auto}
+.variant-promenad #terrasy .chapter-text p,.variant-promenad #lodzhii .chapter-text p{margin-inline:auto}
+.variant-promenad #terrasy .chapter-action,.variant-promenad #lodzhii .chapter-action{display:flex;justify-content:center;padding-inline:0;width:100%}
+.variant-promenad #terrasy .chapter-action .button,.variant-promenad #lodzhii .chapter-action .button{width:fit-content;max-width:100%;text-align:center}
+.variant-promenad #dvor{margin-top:calc(var(--timber-face)*-1);padding-top:max(var(--gazeta-space),calc(var(--brace-reach) + var(--timber-face)/3))}
+.variant-promenad #dvor::before{border-top-width:var(--timber-face)}
+.variant-promenad #dvor::after{display:none;content:none;background:none}
+.variant-promenad .hero-building-drift{translate:none;transition:none}
+@media(min-width:951px){
+ .variant-promenad #terrasy::after{right:calc(var(--timber-face)/-2)}.variant-promenad #lodzhii::after{left:calc(var(--timber-face)/-2)}
+ .variant-promenad #vysota .ceiling-copy{grid-column:1/5;grid-row:1;padding-right:24px}
+ .variant-promenad #vysota .chapter-photo{grid-column:5/13;grid-row:1}
+ .variant-promenad #vysota .facts-list{grid-column:1/-1;grid-row:2;column-gap:var(--promenad-gap);margin-top:10px}
+ .variant-promenad #terrasy,.variant-promenad #lodzhii{padding-block:max(var(--gazeta-space),calc(var(--brace-reach) + var(--timber-face)/3));padding-inline:max(64px,5vw)}
+}
+@media(min-width:701px) and (max-width:1100px){.variant-promenad .header{gap:20px}.variant-promenad .header nav{gap:18px;font-size:16px}.variant-promenad .header-contact{font-size:16px;padding-inline:16px}}
+@media(min-width:951px) and (max-width:1200px){.variant-promenad{--ceiling-title:48px;--ceiling-copy-gap:24px}.variant-promenad #vysota .facts-lead{font-size:20px}.variant-promenad #vysota .chapter-action .button{font-size:17px;padding-inline:18px}}
+@media(max-width:950px){.variant-promenad #vysota .ceiling-copy{grid-column:1;grid-row:1}.variant-promenad #vysota .chapter-photo{grid-row:2}.variant-promenad #vysota .facts-list{grid-row:3}.variant-promenad #vysota .facts-lead{max-width:48ch}.variant-promenad #terrasy,.variant-promenad #lodzhii{padding-block:calc(var(--brace-reach) + var(--timber-face))}}
+@media(max-width:700px){.variant-promenad{--header-rh-size:43px;--ceiling-title:clamp(40px,11vw,58px);--ceiling-space:60px;--ceiling-copy-gap:24px}.variant-promenad #vysota .ceiling-measure{left:-8px;width:16px}.variant-promenad #vysota .ceiling-measure span{padding:5px 2px}.variant-promenad .header nav{font-size:18px}.variant-promenad #terrasy,.variant-promenad #lodzhii{margin-top:calc(var(--timber-face)*-1)}}
